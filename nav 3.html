@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-family: 'Times New Roman';
+            font-size: 18px;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-color: rgb(12, 12, 12);
+        }
+        .list {
+
+            width: auto;
+        }
+
+        nav {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('https://wallpapershome.com/images/wallpapers/space-3840x2160-galaxy-planet-4k-17039.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: 100% 400px;
+        
+        
+        }
+        
+
+        nav .logo {
+            margin-left: 80px;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 40px;
+            padding: 5px 15px;
+            background-image: url('https://media.istockphoto.com/id/1360144439/photo/space-shuttle-flight-in-deep-space-space-rocket-on-orbit-of-earth-planet-sci-fi-space.jpg?b=1&s=170667a&w=0&k=20&c=Ejg0zhg26acQKgnXDew5hKwD4KpT614WaBOrOUepZCE=');
+            background-repeat:no-repeat;
+            background-attachment:scroll;
+            background-size: 100% ;
+            border-radius: 15px;
+        }
+
+        ul {
+
+            font-family: monospace;
+            display:flex;
+            gap: 20px;
+            margin-top: 10px;
+            margin-right: 80px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(159, 160, 161);
+            padding: 10px;
+            transition: 0.3s ease-in;
+        }
+
+        li {
+            border: none;
+            position: relative;
+
+        }
+
+        li:hover {
+            border: none;
+            color: rgb(185, 182, 182);
+            
+        }
+
+        .line::after {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 1px;
+            right: 0;
+            bottom: -5px;
+            background-color: white;
+            
+            transition: all ease-in-out 0.3s;
+        }
+
+        .line:hover::after {
+            width: 100%;
+            left: 0;
+            
+        }
+
+        ul:hover li a {
+            color: white;
+        }
+
+        ul:hover li a:not(:hover) {
+            color: rgb(154, 156, 156);
+            opacity: 0.9;
+            filter: blur(1.5px);
+
+        }
+
+        
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="list">
+        <nav>
+            <div>
+            <a href="#" class="logo"> ___</a>
+            </div>
+         
+
+            <ul>
+                <li class="line"><i class="fa fa-home"></i><a href="#">Home</a></li>
+                <li class="line"><i class="fa fa-info-circle"></i><a href="#">Facts</a></li>
+                <li class="line"><i class="fa fa-rocket"></i><a href="#">Light Years</a></li>
+                <li class="line"><i class="fa fa-comment"></i><a href="#">Feadback</a></li>
+                <li class="line"><i class="fa fa-phone"></i><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>
